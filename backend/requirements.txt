@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+requests
+
+langchain
+langchain-ollama
+langchain-community
+langchain-experimental
+langchain-core
+
+numpy
+sentence-transformers
+faiss-cpu
+sqlmodel
