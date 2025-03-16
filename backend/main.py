@@ -60,7 +60,7 @@ def prompt(chat_request: ChatRequest, session_db: SessionDeps):
     if faiss_index.ntotal > 0: 
         D, I = faiss_index.search(query_embedding, 1)  
 
-        if D[0][0] < 0.8:  
+        if D[0][0] < 0.3:  
             print("🟢 Semantic Cache Hit - Using FAISS cached response")
             return {"result": faiss_cache[I[0][0]]}  
 
